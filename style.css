@@ -2,8 +2,101 @@ body {
 margin: 24px;
 }
 
+/* FONT SIZES (MOBILE) AND COLORS */
+
+title {
+font-size: 48px;
+color: #333333;
+font-weight: bold;
+}
+
+h1 {
+font-size: 32px;
+color: #000000;
+font-weight: bold;
+}
+
+h2 {
+font-size: 48px;
+color: #000000;
+font-weight: bold;
+}
+
+h3 {
+font-size: 20px;
+color: #333333;
+font-weight: bold;
+}
+
+h4 {
+font-size: 18px;
+color: #333333;
+/* change to light */
+}
+
+h5 {
+font-size: 18px;
+color: #333333;
+/* change to light */
+}
+
+p {
+  font-size: 18px;
+  color: #333333;
+  /* change to light */
+  }
+
+.link {
+    font-size: 18px;
+    color: #333333;
+    /* change to light */
+    }
+
+.button-text {
+font-size: 14px;
+color: #333333;
+font-weight: bold;
+}
+
+.footer-info {
+  color: #FFFFFF;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #828282;
+  /* change to light */
+}
+
+
+
+
+
+/* DESKTOP VERSION */
+
 @media (min-width: 1000px) {
   body {
     margin: 40px 190px;
   }
+
+  title {
+    font-size: 80px;
+    }
+    
+    h1 {
+    font-size: 64px;
+    }
+    
+    h2 {
+    font-size: 40px;
+    }
+    
+    h3 {
+    font-size: 32px;
+    }
+    
+    h4 {
+      font-size: 24px;
+    }
+
 }
