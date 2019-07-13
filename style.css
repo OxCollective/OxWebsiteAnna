@@ -1,65 +1,67 @@
-body {
-margin: 24px;
+* {
+  margin: 0;
 }
 
 /* FONT SIZES (MOBILE) AND COLORS */
 
-title {
-font-size: 48px;
-color: #333333;
-font-weight: bold;
+.title {
+  font-size: 48px;
+  color: #333333;
+  font-weight: bold;
 }
 
 h1 {
-font-size: 32px;
-color: #000000;
-font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+  font-weight: bold;
 }
 
 h2 {
-font-size: 48px;
-color: #000000;
-font-weight: bold;
+  font-size: 48px;
+  color: #000000;
+  font-weight: bold;
+  margin: 24px 0 16px 0;
 }
 
 h3 {
-font-size: 20px;
-color: #333333;
-font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 h4 {
-font-size: 18px;
-color: #333333;
-/* change to light */
+  font-size: 18px;
+  color: #333333;
+  /* change to light */
 }
 
 h5 {
-font-size: 18px;
-color: #333333;
-/* change to light */
+  font-size: 18px;
+  color: #333333;
+  /* change to light */
 }
 
 p {
   font-size: 18px;
   color: #333333;
   /* change to light */
-  }
+}
 
 .link {
-    font-size: 18px;
-    color: #333333;
-    /* change to light */
-    }
+  font-size: 18px;
+  color: #333333;
+  /* change to light */
+}
 
 .button-text {
-font-size: 14px;
-color: #333333;
-font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
 }
 
 .footer-info {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-text {
@@ -68,35 +70,208 @@ font-weight: bold;
   /* change to light */
 }
 
+li {
+  list-style-type: none;
+}
 
+/* LAYOUT */
+.header {
+  background-color: #f2f2f2;
+  background-image: url("images/OxBox-Tilted@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+  padding: 24px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.vision {
+  flex-grow: 9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.intro {
+  padding: 24px;
+}
+
+.process {
+  padding: 24px;
+}
+
+.column {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.column img {
+height: 210px;
+width: 210px;
+}
+
+.work {
+  padding: 24px;
+}
+.work-card {
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.grey-box {
+  height: 325px;
+  width: 325px;
+  background-color: #F2F2F2;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.placeholder {
+  height: 98px;
+  width: 288px;
+  background-color: #F2F2F2;
+}
+
+.services {
+margin-right: 24px;
+}
+
+.yellow-container {
+background-color: #F2C94C;
+padding: 72px 34px 100px 24px;
+}
+
+.contact {
+  padding: 24px;
+}
+
+.footer {
+  background-color: #333333;
+}
 
 /* DESKTOP VERSION */
 
 @media (min-width: 1000px) {
-  body {
-    margin: 40px 190px;
+  /* FONT-SIZES DESKTOP */
+  .title {
+    font-size: 80px;
   }
 
-  title {
-    font-size: 80px;
-    }
-    
-    h1 {
+  h1 {
     font-size: 64px;
-    }
-    
-    h2 {
+  }
+
+  h2 {
     font-size: 40px;
-    }
-    
-    h3 {
+    margin: 42px 0 26px 0;
+  }
+
+  h3 {
     font-size: 32px;
-    }
-    
-    h4 {
-      font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  /* LAYOUT DESKTOP */
+  .header {
+    padding: 40px 188px;
+  }
+
+  .vision {
+    text-align: left;
+  }
+
+  .intro {
+    padding: 40px 188px;
+  }
+
+  .process {
+    padding: 40px 188px;
+  }
+
+  .process-columns{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cl-left {
+    margin-right: 35px;
+  }
+
+  .cl-middle {
+    margin: 0 35px;
+  }
+
+  .cl-right {
+    margin-left: 35px;
+  }
+
+  .work {
+    padding: 40px 188px;
+  }
+
+  .work-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .work-card {
+    text-align: left;
+    margin-bottom: 128px;
+  }
+  .grey-box {
+    height: 400px;
+    width: 400px;
+  }
+
+  .brands {
+    padding: 40px 188px;
+  }
+
+  .placeholder {
+    height: 232px;
+    width: 676px;
+  }
+  .services {
+    margin-right: 81px;
     }
 
+  .yellow-container {
+    display: flex;
+    padding: 105px 150px 100px 190px;
+  }
+
+  .contact {
+    padding: 40px 188px 40px 90px;
+  }
 }
