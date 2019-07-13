@@ -1,0 +1,9 @@
+body {
+margin: 24px;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 40px 190px;
+  }
+}
