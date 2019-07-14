@@ -33,6 +33,7 @@ h3 {
 h4 {
   font-size: 18px;
   color: #333333;
+  margin-bottom: 24px;
   /* change to light */
 }
 
@@ -64,10 +65,24 @@ p {
   color: #ffffff;
 }
 
+.footer-info img {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 30px;
+}
+
+.p14 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
 .footer-text {
   font-size: 14px;
   color: #828282;
   /* change to light */
+}
+.impressum a {
+  color: #828282;
 }
 
 li {
@@ -75,6 +90,7 @@ li {
 }
 
 /* LAYOUT */
+
 .header {
   background-color: #f2f2f2;
   background-image: url("images/OxBox-Tilted@2x.png");
@@ -110,6 +126,37 @@ li {
   padding: 24px;
 }
 
+.intro-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-container a{
+  align-self: center;
+}
+
+button {
+  height: 60px;
+  width: 272px;
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 6px;
+  cursor: pointer;
+ 
+}
+
+hr {
+  border: 1px solid #000000;
+  width: 138px; 
+  height: 0px;
+  margin-bottom: 48px;
+}
+.section-title {
+margin-bottom: 80px;
+}
+
 .process {
   padding: 24px;
 }
@@ -127,15 +174,22 @@ width: 210px;
 .work {
   padding: 24px;
 }
+
+.work-title{
+margin: 
+}
 .work-card {
   text-align: left;
   margin-bottom: 80px;
+  margin-left: 28px;
 }
 
 .grey-box {
   height: 325px;
   width: 325px;
   background-color: #F2F2F2;
+  margin-bottom: -40px;
+  margin-left: -28px;
 }
 
 .brands {
@@ -156,17 +210,52 @@ width: 210px;
 margin-right: 24px;
 }
 
+.services-title {
+  padding: 24px;
+  margin-bottom: -50px;
+}
+
 .yellow-container {
 background-color: #F2C94C;
 padding: 72px 34px 100px 24px;
 }
 
+.yellow-card {
+  margin-bottom: 40px;
+}
+
 .contact {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact img {
+  height: 300px;
+  width: auto;
+  margin: 47px 0;
+  align-self: center;
 }
 
 .footer {
   background-color: #333333;
+  padding: 70px 20px;
+}
+
+.footer-card {
+  margin-bottom: 35px;
+}
+
+.footer-card p {
+color: white;
+}
+
+.footer-card a {
+color: white;
+}
+
+.impressum {
+  text-align: center;
 }
 
 /* DESKTOP VERSION */
@@ -188,11 +277,12 @@ padding: 72px 34px 100px 24px;
 
   h3 {
     font-size: 32px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
 
   h4 {
     font-size: 24px;
+    margin-bottom: 40px;
   }
 
   /* LAYOUT DESKTOP */
@@ -208,6 +298,14 @@ padding: 72px 34px 100px 24px;
     padding: 40px 188px;
   }
 
+  .intro-container a{
+    align-self: flex-start;
+  }
+
+  hr {
+    width: 261px; 
+    margin-bottom: 80px;
+  }
   .process {
     padding: 40px 188px;
   }
@@ -248,10 +346,13 @@ padding: 72px 34px 100px 24px;
   .work-card {
     text-align: left;
     margin-bottom: 128px;
+    margin-left: 50px;
   }
   .grey-box {
     height: 400px;
     width: 400px;
+    margin-bottom: -60px;
+    margin-left: -50px;
   }
 
   .brands {
@@ -266,12 +367,52 @@ padding: 72px 34px 100px 24px;
     margin-right: 81px;
     }
 
+  .services-title {
+    padding: 40px 150px 0 188px;
+    margin-bottom: -30px;
+    }
+
   .yellow-container {
     display: flex;
+    justify-content: space-between;
     padding: 105px 150px 100px 190px;
   }
 
+  .yellow-column {
+    width: 45%
+  }
+
+  .yellow-card {
+    height: 150px;
+  }
+
+
+
   .contact {
     padding: 40px 188px 40px 90px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact img {
+    height: 600px;
+    width: auto;
+  }
+
+  .contact-box {
+    margin-left: -20px;
+  }
+
+  .footer {
+    padding: 80px 190px;
+  }
+  
+  .footer-info {
+    display: flex;
+    margin-bottom: 140px;
+  }
+
+  .footer-card {
+    margin-left: 70px;
   }
 }
