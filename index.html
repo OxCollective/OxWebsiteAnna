@@ -4,30 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="fonts/Campton/MyFontsWebfontsKit.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/Campton/MyFontsWebfontsKit.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Ox Collective</title>
   </head>
-  
+
   <body>
     <!-- header -->
     <div class="header">
-
-      <div class="navbar">
-        <div class="brand">
-          <p><a href="/">Ox Collective</a></p> 
+        <div class="topnav" id="myTopnav">
+          <a class="link" id="home" href="/">Ox Collective</a>
+          <a class="link" href="#process">Process</a>
+          <a class="link" href="#work">Work</a>
+          <a class="link" href="#services">Services</a>
+          <a class="link" href="#contact">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="images/menu-hamburger.png"  id="hamburger">
+          </a>
         </div>
-          <ul class="menu">
-            <li><a class="link" href="#process">Process</a></li>
-            <li><a class="link" href="#work">Work</a></li>
-            <li><a class="link" href="#services">Services</a></li>
-            <li><a class="link" href="#contact">Contact</a></li>
-          </ul>
+      <div class="vision">
+        <p class="title" id="title">Products designed to set you apart from the herd.</p>
       </div>
-        <div class="vision">
-        <p class="title">Products designed to 
-          set you apart from the herd.</p>
-        </div>
     </div>
 
     <!-- intro -->
@@ -44,7 +45,11 @@
           that; a seasoned, insightful and highly motivated team who can come in
           at any phase and help products get where they need to be.
         </h4>
-        <a href="#"> <button class="button-text" type="button">CAN WE HELP? LET'S TALK</button> </a>
+        <a href="#">
+          <button class="button-text" type="button">
+            CAN WE HELP? LET'S TALK
+          </button>
+        </a>
       </div>
     </div>
 
@@ -90,7 +95,7 @@
     <!-- work -->
     <div class="work">
       <div class="section-title">
-        <hr>
+        <hr />
         <h5><a id="work"></a>WORK</h5>
         <h1>What we’re proud of</h1>
       </div>
@@ -149,7 +154,7 @@
     <!-- services -->
     <div class="services">
       <div class="section-title services-title">
-        <hr>
+        <hr />
         <h5><a id="services"></a>SERVICES</h5>
         <h1>The tools we bring to the field.</h1>
       </div>
@@ -206,38 +211,38 @@
 
     <!-- contact -->
     <div class="contact">
-      <img src="images/section-contact/ContactPictures@2x.png" alt="team">
+      <img src="images/section-contact/ContactPictures@2x.png" alt="team" />
       <div class="contact-box">
         <div class="section-title">
-            <hr>
-            <h5><a id="contact"></a>CONTACT</h5>
-            <h1>Ox Collective.
-                Made in Berlin, available around the globe.</h1>
+          <hr />
+          <h5><a id="contact"></a>CONTACT</h5>
+          <h1>Ox Collective. Made in Berlin, available around the globe.</h1>
         </div>
         <div class="contact-text">
           <h4>
-              We’re great at working near and far.
-              Let’s make something great!
+            We’re great at working near and far. Let’s make something great!
           </h4>
-          <a href="#"> <button class="button-text" type="button">GET IN TOUCH</button></a>
+          <a href="#">
+            <button class="button-text" type="button">GET IN TOUCH</button></a
+          >
         </div>
       </div>
     </div>
-    
+
     <!-- footer -->
     <div class="footer">
       <div class="footer-info">
-        <img src="images/OxBox@2x.png" alt="logo">
+        <img src="images/OxBox@2x.png" alt="logo" />
         <div class="footer-card">
-          <p class="p14"><strong>VISIT US</strong></p>
-            <p><strong>Ox Collective GbR</strong></p>
-            <p>Oranienstr. 6</p>
-            <p>Treppenhaus 4</p>
-            <p>10997 Berlin</p>
+          <p class="p14">VISIT US</p>
+          <p class="p18bold">Ox Collective GbR</p>
+          <p>Oranienstr. 6</p>
+          <p>Treppenhaus 4</p>
+          <p>10997 Berlin</p>
         </div>
         <div class="footer-card">
-            <p class="p14"><strong>SAY HELLO</strong></p>
-            <a href="mailto: hello@oxcollective.com">hello@oxcollective.com</a>
+          <p class="p14">SAY HELLO</p>
+          <a href="mailto: hello@oxcollective.com">hello@oxcollective.com</a>
         </div>
       </div>
       <div class="impressum">
@@ -245,5 +250,25 @@
         <p class="footer-text">©2019, Ox Collective GbR All Rights Reserved</p>
       </div>
     </div>
+
+    <script>
+      function myFunction() {
+        const nav = document.getElementById("myTopnav");
+        const home = document.getElementById("home");
+        const hamb = document.getElementById("hamburger");
+        const title = document.getElementById("title");
+        if (nav.className === "topnav") {
+          nav.className += " responsive";
+          home.innerHTML = "Home";
+          hamb.src = "images/menu-times.png";
+          title.style.display ="none"
+        } else {
+          nav.className = "topnav";
+          home.innerHTML = "Ox Collective";
+          hamb.src = "images/menu-hamburger.png";
+          title.style.display ="inline"
+        }
+      }
+      </script>
   </body>
 </html>
