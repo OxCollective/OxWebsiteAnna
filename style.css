@@ -1,3 +1,19 @@
+@font-face {
+  font-family: GT-Super;
+  src: url(fonts/GT_Super/font/GT-Super-Text-Black.otf);
+}
+
+.Campton-Bold { 
+	font-family: Campton-Bold;
+	font-weight: normal;
+	font-style: normal;
+}
+.Campton-Light { 
+	font-family: Campton-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
   margin: 0;
 }
@@ -8,12 +24,14 @@
   font-size: 48px;
   color: #333333;
   font-weight: bold;
+  font-family: GT-Super;
 }
 
 h1 {
   font-size: 32px;
   color: #000000;
   font-weight: bold;
+  font-family: GT-Super;
 }
 
 h2 {
@@ -21,6 +39,7 @@ h2 {
   color: #000000;
   font-weight: bold;
   margin: 24px 0 16px 0;
+  font-family: GT-Super;
 }
 
 h3 {
@@ -28,37 +47,48 @@ h3 {
   color: #333333;
   font-weight: bold;
   margin-bottom: 16px;
+  font-family: GT-Super;
 }
 
 h4 {
   font-size: 18px;
   color: #333333;
   margin-bottom: 24px;
-  /* change to light */
+  font-family: Campton-Light;
+  font-weight: normal; 
+	font-style: normal;
 }
 
 h5 {
   font-size: 18px;
   color: #333333;
-  /* change to light */
+  font-family: Campton-Light;
+  font-weight: normal; 
+	font-style: normal;
 }
 
 p {
   font-size: 18px;
   color: #333333;
-  /* change to light */
+  font-family: Campton-Light;
+  font-weight: normal; 
+	font-style: normal;
 }
 
 .link {
   font-size: 18px;
   color: #333333;
-  /* change to light */
+  font-family: Campton-Light;
+  font-weight: normal; 
+  font-style: normal;
 }
 
 .button-text {
   font-size: 14px;
   color: #333333;
-  font-weight: bold;
+  font-family: Campton-Bold;
+  font-weight: normal; 
+	font-style: normal;
 }
 
 .footer-info {
@@ -79,7 +109,9 @@ p {
 .footer-text {
   font-size: 14px;
   color: #828282;
-  /* change to light */
+  font-family: Campton-Light;
+  font-weight: normal; 
+	font-style: normal;
 }
 .impressum a {
   color: #828282;
@@ -175,9 +207,6 @@ width: 210px;
   padding: 24px;
 }
 
-.work-title{
-margin: 
-}
 .work-card {
   text-align: left;
   margin-bottom: 80px;
