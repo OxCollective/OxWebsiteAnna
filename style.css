@@ -66,6 +66,7 @@ h5 {
   font-weight: normal; 
   font-style: normal;
   margin-bottom: 15px;
+  padding-top: 48px;
 }
 
 p {
@@ -82,6 +83,7 @@ p {
   font-family: Campton-Light;
   font-weight: normal; 
   font-style: normal;
+  padding-right: 20px;
 }
 
 .button-text {
@@ -224,7 +226,6 @@ hr {
   border: 1px solid #333333;
   width: 138px; 
   height: 0px;
-  margin-bottom: 48px;
 }
 .section-title {
 margin-bottom: 60px;
@@ -248,10 +249,24 @@ width: 210px;
   padding: 24px;
 }
 
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .work-card {
   text-align: left;
   margin-bottom: 80px;
   margin-left: 28px;
+}
+
+.work-card h3 {
+  max-width: 500px;
+}
+
+.work-card p {
+  max-width: 500px;
 }
 
 .grey-box {
@@ -373,6 +388,9 @@ font-size: 18px;
     margin-bottom: 40px;
   }
 
+  h5 {
+    padding-top: 80px;
+  }
   /* LAYOUT DESKTOP */
 
   .topnav .icon {
@@ -404,7 +422,6 @@ width: 60%;
 
   hr {
     width: 261px; 
-    margin-bottom: 80px;
   }
   .process {
     padding: 80px 188px;
@@ -433,6 +450,7 @@ width: 60%;
 
   .work-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -447,7 +465,9 @@ width: 60%;
     text-align: left;
     margin-bottom: 128px;
     margin-left: 50px;
+    margin-right: 20px;
   }
+
   .grey-box {
     height: 400px;
     width: 400px;
