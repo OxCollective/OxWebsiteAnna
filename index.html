@@ -15,21 +15,26 @@
 
   <body>
     <!-- header -->
+    
     <div class="header">
-        <div class="topnav" id="myTopnav">
-          <a class="link" id="home" href="/">Ox Collective</a>
-          <a class="link" href="#process">Process</a>
-          <a class="link" href="#work">Work</a>
-          <a class="link" href="#services">Services</a>
-          <a class="link" href="#contact">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <img src="images/menu-hamburger.png"  id="hamburger">
-          </a>
-        </div>
-      <div class="vision">
-        <p class="title" id="title">Products designed to <br>
-          set you apart from the herd.</p>
+      <div class="header-container">
+      <div class="topnav" id="myTopnav">
+        <a class="link" id="home" href="/">Ox Collective</a>
+        <a class="link" href="#process">Process</a>
+        <a class="link" href="#work">Work</a>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <img src="images/menu-hamburger.png" id="hamburger" />
+        </a>
       </div>
+      <div class="vision">
+        <p class="title" id="title">
+          Products designed to
+          set you apart from the herd.
+        </p>
+      </div>
+    </div>
     </div>
 
     <!-- intro -->
@@ -100,7 +105,7 @@
         <a id="work"></a>
         <hr />
         <h5>WORK</h5>
-        <h1>What we’re proud of</h1>
+        <h1 id="work-h1">What we’re proud of</h1>
       </div>
       <div class="work-container">
         <div class="work-column">
@@ -150,8 +155,10 @@
 
     <!-- brands -->
     <div class="brands">
+      <div class="brands-container">
       <h3>Some of the brands our members have helped</h3>
       <div class="placeholder"></div>
+    </div>
     </div>
 
     <!-- services -->
@@ -163,51 +170,53 @@
         <h1>The tools we bring to the field.</h1>
       </div>
       <div class="yellow-container">
-        <div class="yellow-column">
-          <div class="yellow-card">
-            <h3>Product Design</h3>
-            <p>
-              Designing and launching your product, app, or concept – from a
-              sketch to the store.
-            </p>
+        <div class="yellow-container-columns">
+          <div class="yellow-column">
+            <div class="yellow-card">
+              <h3>Product Design</h3>
+              <p>
+                Designing and launching your product, app, or concept – from a
+                sketch to the store.
+              </p>
+            </div>
+            <div class="yellow-card">
+              <h3>UX Design</h3>
+              <p>
+                Helping you better understand your audience and provide
+                meaningful solutions.
+              </p>
+            </div>
+            <div class="yellow-card">
+              <h3>UI Design</h3>
+              <p>
+                Making your product interface come alive through accessible and
+                human-centered design.
+              </p>
+            </div>
           </div>
-          <div class="yellow-card">
-            <h3>UX Design</h3>
-            <p>
-              Helping you better understand your audience and provide meaningful
-              solutions.
-            </p>
-          </div>
-          <div class="yellow-card">
-            <h3>UI Design</h3>
-            <p>
-              Making your product interface come alive through accessible and
-              human-centered design.
-            </p>
-          </div>
-        </div>
-        <div class="yellow-column">
-          <div class="yellow-card">
-            <h3>Branding and Visual Identity</h3>
-            <p>
-              Creating an identity that resonates with your users and is
-              visually consistent across every touchpoint - branding that goes
-              beyond just logos.
-            </p>
-          </div>
-          <div class="yellow-card">
-            <h3>Workshops</h3>
-            <p>
-              Helping you identify core bottlenecks and offer meaningful
-              solutions for faster production.
-            </p>
-          </div>
-          <div class="yellow-card">
-            <h3>Direction and Strategy</h3>
-            <p>
-              Pointing your business towards the bigger picture by setting out
-              strategical goals for your team and product.
-            </p>
+          <div class="yellow-column">
+            <div class="yellow-card">
+              <h3>Branding and Visual Identity</h3>
+              <p>
+                Creating an identity that resonates with your users and is
+                visually consistent across every touchpoint - branding that goes
+                beyond just logos.
+              </p>
+            </div>
+            <div class="yellow-card">
+              <h3>Workshops</h3>
+              <p>
+                Helping you identify core bottlenecks and offer meaningful
+                solutions for faster production.
+              </p>
+            </div>
+            <div class="yellow-card">
+              <h3>Direction and Strategy</h3>
+              <p>
+                Pointing your business towards the bigger picture by setting out
+                strategical goals for your team and product.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -215,23 +224,27 @@
 
     <!-- contact -->
     <div class="contact">
-      <img src="images/section-contact/ContactPictures@2x.png" alt="team" />
-      <div class="contact-box">
-        <div class="section-title">
-          <a id="contact"></a>
-          <hr />
-          <h5>CONTACT</h5>
-          <h1>Ox Collective. <br>
-             Made in Berlin, <br>
-             available around the globe.</h1>
-        </div>
-        <div class="contact-text">
-          <h4>
-            We’re great at working near and far. Let’s make something great!
-          </h4>
-          <a href="#">
-            <button class="button-text" type="button">GET IN TOUCH</button></a
-          >
+      <div class="contact-container">
+        <img src="images/section-contact/ContactPictures@2x.png" alt="team" />
+        <div class="contact-box">
+          <div class="section-title">
+            <a id="contact"></a>
+            <hr />
+            <h5>CONTACT</h5>
+            <h1>
+              Ox Collective. <br />
+              Made in Berlin, <br />
+              available around the globe.
+            </h1>
+          </div>
+          <div class="contact-text">
+            <h4>
+              We’re great at working near and far. Let’s make something great!
+            </h4>
+            <a href="#">
+              <button class="button-text" type="button">GET IN TOUCH</button></a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -268,14 +281,14 @@
           nav.className += " responsive";
           home.innerHTML = "Home";
           hamb.src = "images/menu-times.png";
-          title.style.display ="none"
+          title.style.display = "none";
         } else {
           nav.className = "topnav";
           home.innerHTML = "Ox Collective";
           hamb.src = "images/menu-hamburger.png";
-          title.style.display ="inline"
+          title.style.display = "inline";
         }
       }
-      </script>
+    </script>
   </body>
 </html>
