@@ -19,11 +19,11 @@
     <div class="header">
       <div class="header-container">
       <div class="topnav" id="myTopnav">
-        <a class="link" id="home" href="/">Ox Collective</a>
-        <a class="link" href="#process">Process</a>
-        <a class="link" href="#work">Work</a>
-        <a class="link" href="#services">Services</a>
-        <a class="link" href="#contact">Contact</a>
+        <a class="link" id="home" href="/" onclick="closeMe()">Ox Collective</a>
+        <a class="link" href="#process" onclick="closeMe()">Process</a>
+        <a class="link" href="#work" onclick="closeMe()">Work</a>
+        <a class="link" href="#services" onclick="closeMe()">Services</a>
+        <a class="link" href="#contact" onclick="closeMe()">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <img src="images/menu-hamburger.png" id="hamburger" />
         </a>
@@ -121,6 +121,23 @@
               commodo.
             </p>
           </div>
+                    <div class="work-column">
+                      <div class="work-card">
+                        <div class="grey-box"></div>
+                        <h3>
+                          Allowing the digital experience to be possible for everyone via
+                          TestFlight.
+                        </h3>
+                        <p>
+                          Through UX research, iteration and user collaboration, we created
+                          a relatable brand for TestFlight and developed a modular,
+                          human-centered interface for the platform, allowing millions of
+                          people to beta-test their own digital experiences across the
+                          world.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
           <div class="work-card">
             <div class="grey-box"></div>
             <h3>
@@ -134,23 +151,6 @@
             </p>
           </div>
         </div>
-        <div class="work-column">
-          <div class="work-card">
-            <div class="grey-box"></div>
-            <h3>
-              Allowing the digital experience to be possible for everyone via
-              TestFlight.
-            </h3>
-            <p>
-              Through UX research, iteration and user collaboration, we created
-              a relatable brand for TestFlight and developed a modular,
-              human-centered interface for the platform, allowing millions of
-              people to beta-test their own digital experiences across the
-              world.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- brands -->
@@ -288,6 +288,20 @@
           hamb.src = "images/menu-hamburger.png";
           title.style.display = "inline";
         }
+      }
+
+      function closeMe() {
+        const nav = document.getElementById("myTopnav");
+        const home = document.getElementById("home");
+        const hamb = document.getElementById("hamburger");
+        const title = document.getElementById("title");
+
+        if (nav.className === "topnav responsive")
+        nav.className = "topnav";
+        home.innerHTML = "Ox Collective";
+        hamb.src = "images/menu-hamburger.png";
+        title.style.display = "inline";
+
       }
     </script>
   </body>
